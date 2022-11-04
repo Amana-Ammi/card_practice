@@ -1,73 +1,84 @@
+.navbar {
+  background-color: rgb(234, 231, 227);
+  width: 100%;
+}
+
 ul {
-    list-style: none;
-    background-color: rgb(111, 109, 106);
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 li {
-    padding: 8px;
-    display: block;
-    text-align: center;
+  padding: 8px;
+  display: block;
+  text-align: center;
 }
 
 img {
-    width: 100%;
-    /* top left and right rounded corners */
-    border-radius: 10px 10px 0 0;
+  width: 100%;
+  /* top left and right rounded corners */
+  border-radius: 10px 10px 0 0;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    background-color: rgb(128, 145, 251);
-    border-radius: 10px;
-    width: 450px;
-    height: 450px;
-    padding: 0 0 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: rgb(128, 145, 251);
+  border-radius: 10px;
+  width: 450px;
+  height: 450px;
+  padding: 0 0 8px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .card:hover {
-    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.5);
 }
 
 .container {
-    padding: 2px 16px;
+  padding: 2px 16px;
 }
 
 .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
 }
 
 .inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 .flip-card:hover .inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* This keeps the front and back side of the card separate */
-.front, .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .front {
-    background-color: #bbb;
-    color: black;
+  /* background-color: #bbb; */
+  color: black;
+  border-radius: 10px;
 }
 
 .back {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background-color: rgb(223, 228, 232);
 }
