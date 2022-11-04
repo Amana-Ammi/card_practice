@@ -81,4 +81,5 @@ img {
 .back {
   transform: rotateY(180deg);
   background-color: rgb(223, 228, 232);
+  height: 450px;
 }
