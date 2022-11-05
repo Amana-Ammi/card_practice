@@ -83,3 +83,13 @@ img {
   background-color: rgb(223, 228, 232);
   height: 450px;
 }
+
+/* Business Card */
+
+.b-card {
+  width: 650;
+  height: 450;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: black;
+}
